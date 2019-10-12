@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistrarPage } from './auth/registrar/registrar.page';
+import { LoginPage } from './auth/login/login.page';
 
 @NgModule({
-  declarations: [AppComponent, RegistrarPage],
+  declarations: [AppComponent, RegistrarPage, LoginPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     FormsModule, ReactiveFormsModule, HttpClientModule],
