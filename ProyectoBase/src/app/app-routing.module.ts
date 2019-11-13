@@ -11,7 +11,12 @@ const routes: Routes = [
   { path: 'registro', component: RegistrarPage },
   { path: 'registrar', component: RegistrarPage },
   { path: 'login', component: LoginPage },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' }
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
+  { path: 'movimientos', loadChildren: './movimientos/movimientos.module#MovimientosPageModule' },  { path: 'resumen-chart', loadChildren: './resumen-chart/resumen-chart.module#ResumenChartPageModule' },
+
+
+
 ];
 @NgModule({
   imports: [
