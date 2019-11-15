@@ -1,7 +1,7 @@
 ion-item{
-    --background: #15D0B3;
+    --background: ##15D0B3;
     --color: #fff;
-    --border-color: white;
+    --border-color: #F4F3EF;
 }
 
 ion-input{
@@ -23,8 +23,15 @@ ion-button{
     padding-top: 20px;
     text-align: center;
 }
-
-h1 {
+:host {
+    .item-interactive.ion-invalid{
+     --highlight-background: white !important;
+   }
+   .item-interactive.ion-valid{
+     --highlight-background: white !important;
+   }
+ }
+ h1 {
     font-family: 'Nunito';
     font-weight: 1000;
     color: white;
@@ -32,24 +39,28 @@ h1 {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-
 h3{
     color: white;
     font-weight: bold;
     font-family: 'Nunito';
     font-size: 16pt;
 }
-
 a{
     color: #fff;
     text-align: center;
     align-content: center;
 }
+.fondo {
+    background-color: #15D0B3;
+}
+p{
+    color: #fff;
+    font-family: 'Nunito';
+}
 
 .registroText {
-    color: white;
+    color:#15D0B3;
     width:50%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 30px;
 }

@@ -24,13 +24,14 @@ ion-input{
     font-family: 'Nunito';
     --placeholder-color: white; 
     --placeholder-opacity: 100;
+
 }
 
 ion-button{
     --background: white;
     --opacity: 100;	
-    font-family: 'Nunito';
     font-weight: 900;
+    font-family: 'Nunito';
     color: #15D0B3;
 }
 
@@ -40,16 +41,16 @@ h3{
     font-family: 'Nunito';
 }
 
-div {
+div{
     background-color: inherit;
     border: 0px;
   }
   
-.icon-bigger {
-    font-size: 100px; //Preferred size here
+.icon-bigger{
+    font-size: 100px;
 }
 
-.editButton {
+.editButton{
     padding-top: 40px;
     text-align: center;
 }

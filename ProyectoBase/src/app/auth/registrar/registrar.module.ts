@@ -25,6 +25,6 @@ const routes: Routes = [
     ReactiveFormsModule,
     HttpClientModule
   ],
-  declarations: [RegistrarPage]
+  declarations: []
 })
 export class RegistrarPageModule { }

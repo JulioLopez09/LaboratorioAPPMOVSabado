@@ -3,7 +3,6 @@ ion-title{
     font-family: 'Nunito';
     font-weight: bold;
     font-size: 18pt;
-
 }
 
 ion-item{
@@ -13,32 +12,31 @@ ion-item{
 }
 
 ion-input{
-    font-family: 'Nunito';
     --placeholder-color: white; 
     --placeholder-opacity: 100;
-
+    font-family: 'Nunito';
 }
 
 .botonCerrar{
     --background: white;
     --opacity: 100;	
-    font-family: 'Nunito';
-    font-weight: 900;
+    font-weight: 800;
     color: #15D0B3;
+    font-family: 'Nunito';
 }
 
 ion-button{
     --background: white;
     --opacity: 100;	
-    font-family: 'Nunito';
-    font-weight: 900;
+    font-weight: 800;
     color: #15D0B3;
+    font-family: 'Nunito';
 }
 
 h3{
     color: white;
-    font-weight: bold;
     font-family: 'Nunito';
+    font-weight: 900;
 }
 
 .divButton {

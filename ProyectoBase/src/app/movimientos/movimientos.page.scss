@@ -13,8 +13,6 @@ ion-list{
 ion-item{
     --background: #15D0B3;
     --color: #fff;
-    --padding-end: 0px;
-    --inner-padding-end: 0px;
 }
 
 ion-card{
@@ -24,29 +22,34 @@ ion-card{
 
 .cardItems{
     color: #fff;
-    font-family: 'Nunito';
+    --background:  #fff;
 }
-
+ion-button{
+    --background: white;
+    --opacity: 100;	
+    font-weight: 900;
+    color: #15D0B3;
+}
 ion-fab-button{
     --color: white;
 }
 
 .descripcion{
     font-family: 'Nunito';
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 .cuenta{
     font-family: 'Nunito';
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .etiqueta{
     font-family: 'Nunito';
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .cantidad{
-    font-size: 18pt;
+    font-family: 'Nunito';
+    font-size: 14pt;
 }
-

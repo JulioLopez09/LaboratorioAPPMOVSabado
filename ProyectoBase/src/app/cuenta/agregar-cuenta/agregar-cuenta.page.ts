@@ -31,7 +31,8 @@ export class AgregarCuentaPage implements OnInit {
         });
     }
 
-
+    Nombre: string;
+    Cantidad: number;
 
     ngOnInit() {
         console.log(this.titulo);
@@ -39,8 +40,14 @@ export class AgregarCuentaPage implements OnInit {
 
     get f() { return this.registrarForm.controls; }
 
-    async cerrarModal() {
-        await this.modalController.dismiss();
+    async subirCuenta() {
+        let data: any = [];
+        data = { Cantidad: this.Cantidad, Nombre: this.Nombre };
+        this.modalController.dismiss(data);
+    }
+
+    async salirModal() {
+        this.modalController.dismiss();
     }
 
 
@@ -68,7 +75,7 @@ export class AgregarCuentaPage implements OnInit {
             buttons: [{
                 text: 'Aceptar',
                 handler: () => {
-                    this.cerrarModal();
+                    this.subirCuenta();
                 }
             }]
         });
@@ -89,6 +96,8 @@ export class AgregarCuentaPage implements OnInit {
                 }
             }]
         });
+
+
 
         await alert.present();
     }

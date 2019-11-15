@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
   templateUrl: './registrar.page.html',
   styleUrls: ['./registrar.page.scss']
 })
+
 export class RegistrarPage implements OnInit {
   registrarForm: FormGroup;
   submitted = false;

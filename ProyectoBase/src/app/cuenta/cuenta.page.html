@@ -1,7 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Cuentas
-    </ion-title>
+    <ion-title>Cuentas</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,17 +10,13 @@
       <ion-item>
         <ion-card>
           <ion-card-header>
-            <ion-card-title class="cardItems">{{cuenta.Nombre}}
-
-
+            <ion-card-title class="cardItems">
+              {{cuenta.Nombre}}
             </ion-card-title>
-
           </ion-card-header>
           <ion-card-content class="cardItems">
             Tu saldo es de: $ {{cuenta.Cantidad}}
           </ion-card-content>
-
-
           <ion-row class="cardfooter">
             <ion-col>
               <ion-button float-left>
@@ -40,10 +35,26 @@
 
 
 
-
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="onAgregarCuenta()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="cuenta">
+    <ion-icon name="card"></ion-icon>
+    <ion-label>Cuentas</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink='/movimientos'>
+    <ion-icon name="apps"></ion-icon>
+    <ion-label>Movimientos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink='/resumen'>
+    <ion-icon name="send"></ion-icon>
+    <ion-label>Resumen</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

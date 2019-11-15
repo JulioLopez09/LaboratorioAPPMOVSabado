@@ -28,6 +28,12 @@ export class CuentaPage implements OnInit {
         titulo: 'Agregar Cuenta'
       }
     });
+    modal.onDidDismiss().then((data) => {
+      if (data['data'] != null) {
+        this.cuentas.push(data['data']);
+      }
+
+    });
     return await modal.present();
   }
 

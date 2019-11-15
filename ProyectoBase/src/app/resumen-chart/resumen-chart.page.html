@@ -8,11 +8,11 @@
 
   <div class="centered">
     <ion-button shape="round" (click)="displayChartIngresos()">
-      <ion-label> Ingresos </ion-label>
+      <ion-label class="whitelabel"> Ingresos </ion-label>
     </ion-button>
 
     <ion-button shape="round" (click)="displayChartEgresos()">
-      <ion-label> Egresos </ion-label>
+      <ion-label class="whitelabel"> Egresos </ion-label>
     </ion-button>
   </div>
   <br><br><br>
@@ -20,3 +20,20 @@
 
 
 </ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button routerLink='/cuenta'>
+    <ion-icon name="card"></ion-icon>
+    <ion-label>Cuentas</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink='/movimientos'>
+    <ion-icon name="apps"></ion-icon>
+    <ion-label>Movimientos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="resumen">
+    <ion-icon name="send"></ion-icon>
+    <ion-label>Resumen</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

@@ -1,16 +1,13 @@
-<ion-toolbar color="primary">
-  <ion-title>Movimientos
-  </ion-title>
-</ion-toolbar>
-
-
-
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Movimientos</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content color="primary" padding>
   <ion-list inset="full">
     <ion-item-sliding *ngFor="let movimiento of movimientos">
       <ion-item class="ion-no-padding">
         <ion-card>
-
           <ion-grid class="cardItems">
             <ion-row>
               <ion-col>
@@ -42,3 +39,20 @@
   </ion-fab>
 
 </ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button routerLink='/cuenta'>
+    <ion-icon name="card"></ion-icon>
+    <ion-label>Cuentas</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="movimientos">
+    <ion-icon name="apps"></ion-icon>
+    <ion-label>Movimientos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink='/resumen'>
+    <ion-icon name="send"></ion-icon>
+    <ion-label>Resumen</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

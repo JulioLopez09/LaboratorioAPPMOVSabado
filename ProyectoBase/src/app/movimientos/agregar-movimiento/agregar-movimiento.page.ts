@@ -24,7 +24,6 @@ export class AgregarMovimientoPage implements OnInit {
   async subirMovimiento() {
     var data: any = [];
     data = { Descripcion: this.Descripcion, Cantidad: this.Cantidad, Tipo: this.Tipo, Cuenta: this.Cuenta, Etiqueta: this.Etiqueta };
-    console.log("Entro a subir movimiento");
     this.modalController.dismiss(data);
   }
 
